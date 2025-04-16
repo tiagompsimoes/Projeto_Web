@@ -6,7 +6,7 @@ import WatermarkLogin from '../components/WaterMarkLogin';
 const Login = () => {
   return (
     <div className="d-flex flex-column min-vh-100 align-items-center bg-light">
-      <div className="card shadow-lg w-100 vh-100" style={{ maxWidth: '420px' }}>
+      <div className="card shadow-lg w-100" style={{ maxWidth: '420px' }}>
         
         <div className="card-body p-3 flex-column">
           <h5 className="text-center mb-3" style={{ color: "#0046AD", fontWeight: '600' }}>Login</h5>
