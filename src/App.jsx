@@ -6,6 +6,7 @@ import Login from './pages/Login.jsx';
 import Header from './components/Header.jsx';
 // import Footer from './components/Footer.jsx';
 import Navbar from './components/Navbar.jsx';
+import PagInicial from './pages/PagInicial.jsx';
 
 import './assets/css/styles.css';
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           {/* <Route path="/perfil" element={<Perfil />} /> */}
           <Route path="/login" element={<Login />} />
+          <Route path="/inicio" element={<PagInicial />} />
         </Routes>
       {/* <Navbar /> */}
       {/* <Footer /> */}
