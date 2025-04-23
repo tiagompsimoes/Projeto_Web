@@ -29,6 +29,7 @@ const Login = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     required
                 />
+                <label htmlFor="email">Password</label>
                 <input
                     type="text"
                     placeholder="Inserir password"
