@@ -7,9 +7,8 @@ import './Login.css';
 const Login = () => {
   const [email, setEmail] = useState('');
 
-  const handleRecover = (e) => {
+  const handleLogin = (e) => {
     e.preventDefault();
-    console.log("Recuperar palavra passe para:", email);
     // Backend
   };
 
@@ -20,7 +19,7 @@ const Login = () => {
           <div className="forgot-container">
 
             <h2>Esqueci-me da palavra passe</h2>
-            <form onSubmit={handleRecover}>
+            <form onSubmit={handleLogin}>
                 <label htmlFor="email">Inserir email / Número de Aluno</label>
                 <input
                     type="text"
