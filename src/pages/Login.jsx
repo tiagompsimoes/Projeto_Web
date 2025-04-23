@@ -29,7 +29,14 @@ const Login = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     required
                 />
-                <button type="submit">Recuperar</button>
+                <input
+                    type="text"
+                    placeholder="Inserir password"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                />
+                <button type="submit">Login</button>
             </form>
 
             <NavLink to="/login" className="link">
