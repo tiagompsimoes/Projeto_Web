@@ -39,8 +39,8 @@ const Login = () => {
                 <button type="submit">Login</button>
             </form>
 
-            <NavLink to="/login" className="link">
-                Login
+            <NavLink to="/forgotpassword" className="link">
+                Esqueci-me da palavra-passe
             </NavLink>
 
             <div className='watermark'>
