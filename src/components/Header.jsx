@@ -1,17 +1,15 @@
 import React from 'react';
 import logoISCTE from '../assets/images/logoISCTE.png';
+import './Header.css'; 
 
-const Header = () => (
-  <div Header="min-vh-100 d-flex bg-blue flex-column justify-content-center align-items-center mb-12">
-      <div className="card ps-4 border-0" style={{ height: '110px'}}>
-        <div className="card-body d-flex justify-content-center align-items-center bg-primary">
-            <img 
-              src={logoISCTE}
-              alt="ISCTE Logo"
-            />
-        </div>
+const Header = () => {
+  return (
+    <header className="header">
+      <div className="header-content">
+        <img src={logoISCTE} alt="ISCTE Logo" />
       </div>
-  </div>
-);
+    </header>
+  );
+};
 
 export default Header;

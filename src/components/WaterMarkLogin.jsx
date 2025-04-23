@@ -7,9 +7,7 @@ const WatermarkLogin = () => {
     <img
       src={watermarkImg}
       alt="Watermark"
-      style={{
-        width: '100%'
-      }}
+      style={{width: '100%', display: 'block'}}
     />
   );
 };

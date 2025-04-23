@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Header from '../components/Header';
 import WatermarkLogin from '../components/WaterMarkLogin';
-import './Login.css'; 
+import './ForgotPassword.css'; 
 
-const Login = () => {
+const ForgotPassword = () => {
   const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
 
-  const handleLogin = (e) => {
+  const handleRecover = (e) => {
     e.preventDefault();
+    console.log("Recuperar palavra passe para:", email);
     // Backend
   };
 
@@ -19,8 +19,8 @@ const Login = () => {
         <div className='content-wrapper'>
           <div className="forgot-container">
 
-            <h2>Login</h2>
-            <form onSubmit={handleLogin}>
+            <h2>Esqueci-me da palavra passe</h2>
+            <form onSubmit={handleRecover}>
                 <label htmlFor="email">Inserir email / Número de Aluno</label>
                 <input
                     type="text"
@@ -29,19 +29,11 @@ const Login = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     required
                 />
-                <label htmlFor="password">Password</label>
-                <input
-                    type="password"
-                    placeholder="Inserir password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required
-                />
-                <button type="submit">Login</button>
+                <button type="submit">Recuperar</button>
             </form>
 
-            <NavLink to="/forgotpassword" className="link">
-                Esqueci-me da palavra-passe
+            <NavLink to="/login" className="link">
+                Login
             </NavLink>
 
             <div className='watermark'>
@@ -54,4 +46,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default ForgotPassword;
