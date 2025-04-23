@@ -1,49 +1,48 @@
-import React from 'react';
-import SubmitButton from '../components/SubmitButton';
-import FormInput from '../components/FormInput';
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import Header from '../components/Header';
 import WatermarkLogin from '../components/WaterMarkLogin';
+import './Login.css'; 
 
 const Login = () => {
+  const [email, setEmail] = useState('');
+
+  const handleRecover = (e) => {
+    e.preventDefault();
+    console.log("Recuperar palavra passe para:", email);
+    // Backend
+  };
+
   return (
-    <div className="d-flex flex-column min-vh-100 align-items-center bg-light">
-      <div className="card shadow-lg w-100" style={{ maxWidth: '420px' }}>
-        
-        <div className="card-body p-3 flex-column">
-          <h5 className="text-center mb-3" style={{ color: "#0046AD", fontWeight: '600' }}>Login</h5>
-          
-          <form>
-            <FormInput
-              id="email"
-              label="Email / Número de Aluno"
-              type="text"
-              placeholder="Inserir email ou número de aluno"
-            />
+    <div className='main-container'>
+        <Header/>
+        <div className='content-wrapper'>
+          <div className="forgot-container">
 
-            <FormInput
-              id="password"
-              label="Password"
-              type="password"
-              placeholder="Inserir password"
-            />
+            <h2>Esqueci-me da palavra passe</h2>
+            <form onSubmit={handleRecover}>
+                <label htmlFor="email">Inserir email / Número de Aluno</label>
+                <input
+                    type="text"
+                    placeholder="Inserir email ou número de aluno"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                />
+                <button type="submit">Recuperar</button>
+            </form>
 
-            <SubmitButton />
-          </form>
-          
-          {/* Forgot Password */}
-          <div className="text-center mt-3">
-            <a href="#" className="text-decoration-none" style={{ color: "#0046AD" }}>
-              Esqueci-me da palavra-passe
-            </a>
+            <NavLink to="/login" className="link">
+                Login
+            </NavLink>
+
+            <div className='watermark'>
+            <WatermarkLogin/>
+            </div>
           </div>
-          
         </div>
-
-        <div className="card-footer border-0 p-0">
-          <WatermarkLogin />
-        </div>    
-
-      </div>
     </div>
+
   );
 };
 
