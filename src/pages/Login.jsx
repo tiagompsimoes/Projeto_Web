@@ -6,6 +6,7 @@ import './Login.css';
 
 const Login = () => {
   const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -30,10 +31,10 @@ const Login = () => {
                 />
                 <label htmlFor="password">Password</label>
                 <input
-                    type="text"
+                    type="password"
                     placeholder="Inserir password"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                     required
                 />
                 <button type="submit">Login</button>
