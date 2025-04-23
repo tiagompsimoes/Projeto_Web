@@ -19,7 +19,7 @@ const Login = () => {
         <div className='content-wrapper'>
           <div className="forgot-container">
 
-            <h2>Esqueci-me da palavra passe</h2>
+            <h2>Login</h2>
             <form onSubmit={handleLogin}>
                 <label htmlFor="email">Inserir email / Número de Aluno</label>
                 <input
