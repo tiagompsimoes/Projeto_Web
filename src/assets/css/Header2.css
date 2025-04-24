@@ -1,0 +1,58 @@
+.header2 {
+    background-color: #003ac3;
+    padding: 15px 20px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+    color: white;
+  }
+  
+  .header2-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .data {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .header2-right {
+    position: relative;
+  }
+  
+  .icon-circle {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .circle {
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .small-green {
+    background-color: #a8dc3d;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    right: 0;
+  }
+  
+  .small-blue {
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    right: 0;
+  }
+  
