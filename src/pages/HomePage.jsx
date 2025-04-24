@@ -7,7 +7,6 @@ const HomePage = () => {
     <div className="homepage">
       <Header2/>
 
-      {/* Boas-vindas */}
       <div className="boas-vindas">
         <h3>Bem-vindo ao ISCTE</h3>
         <p>
@@ -17,7 +16,6 @@ const HomePage = () => {
         <div className="comecar">Começar ➔</div>
       </div>
 
-      {/* Horário */}
       <div className="secao-horario">
         <div className="secao-horario-header">
           <h4>HORÁRIO</h4>
@@ -40,15 +38,6 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
-      {/* Footer menu */}
-      <nav className="bottom-menu">
-        <div className="item ativo">🏠<br />Home</div>
-        <div className="item">📅<br />Calendário</div>
-        <div className="item">📂<br />Menu</div>
-        <div className="item">🎓<br />Curso</div>
-        <div className="item">💳<br />Pagamentos</div>
-      </nav>
     </div>
   );
 };
