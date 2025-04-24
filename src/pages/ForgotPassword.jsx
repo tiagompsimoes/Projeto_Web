@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Header from '../components/Header';
 import WatermarkLogin from '../components/WaterMarkLogin';
-import './ForgotPassword.css'; 
+import '../assets/css/ForgotPassword.css'; 
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState('');

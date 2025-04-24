@@ -1,0 +1,16 @@
+.header {
+  background-color: #003ac3;
+  padding: 10px 20px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 100vw;   
+  z-index: 3;
+  position: relative;
+}
+
+.logo {
+  height: 45px;
+}
