@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../assets/css/PagInicial.css';
 import Header from '../components/Header';
 
@@ -22,10 +23,10 @@ const PagInicial = () => {
           <span className="botao-title">Sou um novo aluno</span>
           <span className="botao-sub">Como chegar ao ISCTE</span>
         </a>
-        <a href="#" className="botao">
+        <NavLink to="/login" className="botao">
           <span className="botao-title">Já sou aluno</span>
           <span className="botao-sub">Quero fazer o login.</span>
-        </a>
+        </NavLink>
       </div>
     </main>
   );
