@@ -7,10 +7,14 @@ import '../assets/css/Login.css';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [data, setData] = useState();
 
   const handleLogin = (e) => {
     e.preventDefault();
+    console.log('Login feito:', { email, password });
     // Backend
+    // confirma login
+    // se tudo ok, redirects to /home
   };
 
   return (
